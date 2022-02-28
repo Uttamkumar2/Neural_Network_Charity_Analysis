@@ -1,4 +1,4 @@
-# Neural_Network_Charity_Analysis
+# Neural Network Charity Analysis
 
 ## Overview
 
@@ -12,13 +12,13 @@ The Objective of this analysis is to determine if organizations that were funded
 
 ![datafreme_df](https://user-images.githubusercontent.com/91766890/155928957-1e430ff5-4449-4fca-bd35-9102b59649ba.png)
 
-* Accuracy Attempt 1
+* Accuracy Attempt 1 : Droping more redundent columns,  changing binning cutoffs and more hidden layers.
   ![accuracy_attempt1](https://user-images.githubusercontent.com/91766890/155931189-4671581e-a6e6-487d-99d2-1726da0f4af4.png)
 
-* Accuracy Attempt 2
+* Accuracy Attempt 2 : Changing activation functions
   ![accuracy_attempt2](https://user-images.githubusercontent.com/91766890/155931203-64a9cfe4-46e6-48f3-917b-813d20012839.png)
 
-* Accuracy Attempt 3
+* Accuracy Attempt 3 : kerastuner Search 
   ![accuracy_attempt3](https://user-images.githubusercontent.com/91766890/155931214-a9421307-59e8-4f38-b8ad-ff1def7355f7.png)
 
 
@@ -30,3 +30,6 @@ The Objective of this analysis is to determine if organizations that were funded
 * in #3rd attempt I used kerastuner to search for the best hyperparameters to train the model. The acuracy I achieve was comprable to by using activation fuction.
 
 ## Summary
+
+Overall, the model, even with the optimization attempts, could not yield the 75% accuracy target, falling short at 73%. As there are quite a few negative values in the scaled dataset, We can give more attempt using SVM to solve this problem, SVM have an advantage over neural networks for binary classification problem.
+
