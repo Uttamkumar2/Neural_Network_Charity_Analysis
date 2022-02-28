@@ -12,14 +12,21 @@ The Objective of this analysis is to determine if organizations that were funded
 
 ![datafreme_df](https://user-images.githubusercontent.com/91766890/155928957-1e430ff5-4449-4fca-bd35-9102b59649ba.png)
 
+* Accuracy Attempt 1
+  ![accuracy_attempt1](https://user-images.githubusercontent.com/91766890/155931189-4671581e-a6e6-487d-99d2-1726da0f4af4.png)
+
+* Accuracy Attempt 2
+  ![accuracy_attempt2](https://user-images.githubusercontent.com/91766890/155931203-64a9cfe4-46e6-48f3-917b-813d20012839.png)
+
+* Accuracy Attempt 3
+  ![accuracy_attempt3](https://user-images.githubusercontent.com/91766890/155931214-a9421307-59e8-4f38-b8ad-ff1def7355f7.png)
+
+
 ## Compiling, Training and Evaluating the Model
 * I used 3 layers (excluding the output layer) with 10 neurons each. I increased the number of neurons and hidden layers from my initial attempts since it gave better results. I used a combination of tanh and relu activation functions as it gave slightly better results than using a relu activation function alone.
 * The highest model performance I could achieve was ~73%. I could not achieve the target model performance.
-* To tune the model, I first used kerastuner to search for the best hyperparameters to train the model. I achieved an accuracy of ~72%
-* Next I manually tuned the data by
-    Dropping more redundant columns like "EIN","NAME", "STATUS", "SPECIAL_CONSIDERATIONS" as it was not influencing outcome.
-    Changing binning cutoffs
-    Adding more hidden layers and neurons
-    Changing the activation functions The accuracy I achieved was comparable to the accuracy from searching for the best hyperparameters.
+* To tune the model, I first tried dropping more redunt colunes like "EIN","NAME", "STATUS", "SPECIAL_CONSIDERATIONS" as it was not influencing outcome. and change banning cutoffs, add more hidden layers, I achieved acuracy 72%
+* Then I tried by chaning activation function
+* in #3rd attempt I used kerastuner to search for the best hyperparameters to train the model. The acuracy I achieve was comprable to by using activation fuction.
 
 ## Summary
